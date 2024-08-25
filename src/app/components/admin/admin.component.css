@@ -1,0 +1,184 @@
+/* Admin Navbar */
+.navbar {
+  background-color: #1a1a2e; /* Dark blue background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Stronger shadow */
+  border-bottom: none; /* Removed border */
+  padding: 15px; /* Increased padding */
+  backdrop-filter: blur(5px); /* Softer blur effect */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.logo {
+  max-height: 60px;
+  max-width: 55px;
+}
+
+.mhub{
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  color: #e94560; /* Bright red */
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  color: #e94560; /* Bright red */
+  font-size: 26px;
+  transition: color 0.3s ease;
+}
+
+.login-button {
+  background: linear-gradient(45deg, #6a0572, #a40606); /* Darker gradient */
+  color: #ffffff; /* White text */
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 24px; /* Increased padding */
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.profile {
+  text-decoration: none;
+  color: white;
+}
+
+.login-button:hover {
+  background: linear-gradient(45deg, #a40606, #6a0572); /* Inverted gradient on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+.offcanvas-body h3 {
+  font-weight: bold;
+}
+
+.nav-link {
+  color: #e94560; /* Bright red text */
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffd700; /* Gold on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  min-width: 12rem;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+  background-color: #282846;
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.3);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown:focus .dropdown-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Dropdown Items */
+.dropdown-item {
+  display: block;
+  padding: 0.5rem 1.25rem;
+  clear: both;
+  font-weight: normal;
+  color: #ffffff;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-item:hover,
+.dropdown-item:focus {
+  color: #ffd700; /* Gold text */
+  background-color: #6a0572; /* Dark purple */
+}
+
+/* Active state for dropdown items */
+.dropdown-item.active,
+.dropdown-item:active {
+  color: #ffd700; /* Gold text */
+  background-color: #6a0572; /* Dark purple */
+}
+
+/* Divider Line */
+.dropdown-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #40407a; /* Darker line */
+}
+
+.logout {
+  cursor: pointer;
+}
+
+/* Admin Container */
+.admin-container {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.admin-sidebar {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+  color: #ffffff; /* White text */
+  background: linear-gradient(90deg, #3a3a67, #a40606); /* Horizontal gradient */
+  border-right: none; /* Removed border */
+  height: 70px;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Stronger shadow */
+}
+
+.admin-main {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: row; /* Horizontal alignment */
+  gap: 15px;
+}
+
+.btn {
+  font-weight: bold;
+  background-color: #6a0572; /* Dark purple button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #a40606; /* Dark red on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.content {
+  background-color: #1a1a2e; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 25px; /* Increased padding */
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}

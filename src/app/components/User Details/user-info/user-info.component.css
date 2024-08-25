@@ -1,0 +1,99 @@
+/* General container styling */
+.container {
+  max-width: 500px;
+  margin: 100px auto; /* Centers the container horizontally and vertically */
+  padding: 30px;
+  background-color: #ffffffab;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Form heading styling */
+.container h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 1.5rem;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left; /* Aligns the labels and inputs to the left */
+}
+
+/* Label styling */
+.form-group label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Input field styling */
+.form-group input[type="text"],
+.form-group input[type="number"],
+.form-group input[type="radio"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Radio button styling */
+.form-check-inline {
+  margin-right: 10px;
+}
+
+.radio-inline {
+  margin-right: 20px;
+}
+
+/* Button styling */
+.btn-success {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  background: linear-gradient(45deg, #e63946, #d62828);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn-success:hover {
+  background: linear-gradient(45deg, #d62828, #e63946);
+}
+
+/* Error message styling */
+.text-danger {
+  font-family: 'Poppins', sans-serif;
+  color: #d62828;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    margin: 50px auto; /* Reduces top margin for smaller screens */
+    padding: 20px;
+  }
+
+  .container h5 {
+    font-size: 1.25rem; /* Reduces font size for heading */
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="number"],
+  .form-group input[type="radio"] {
+    padding: 8px; /* Reduces padding for input fields */
+  }
+
+  .btn-success {
+    padding: 8px; /* Reduces padding for button */
+  }
+}

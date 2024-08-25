@@ -1,0 +1,495 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
+/* Navbar */
+.navbar {
+  background-color: #8bd2d1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #ccc;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  max-height: 50px;
+  max-width: 45px;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  color: #fc87a4;
+  font-size: 24px;
+  transition: 0.3s color;
+}
+
+.login-button {
+  background: linear-gradient(45deg, #d87db3, #f29f60);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+}
+
+.login-button:hover {
+  background: linear-gradient(45deg, #feb47b, #ff7e5f);
+}
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  border-radius: 3rem;
+  margin-left: 15px;
+}
+
+.navbar-toggler:hover {
+  background: linear-gradient(45deg, #feb47b, #ff7e5f);
+}
+
+.offcanvas-header {
+  color: #ffffff;
+  background-color: #b5c6f4;
+}
+
+.offcanvas-body {
+  color: #ffffff;
+  background-color:#8bd2d1;
+}
+
+.btn-close {
+  color: #ffffff;
+  background-color: #ffcb05;
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.nav-link {
+  color: white;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #0fbedd;
+}
+
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #1e3a8a;
+    visibility: hidden;
+    transition: 0.1s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible;
+  }
+}
+/* 
+.btn {
+  font-size: 20px;
+  border-radius: 2rem;
+  padding: 5px 25px;
+  background: linear-gradient(45deg, #1e3a8a, #5a67d8);
+  color: white;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #5a67d8, #1e3a8a);
+} */
+.btn {
+  font-size: 18px;
+  border-radius: 2rem;
+  padding: 8px 30px;
+  background-color: #4CAF50; /* Green */
+  color: white;
+  border: 2px solid #4CAF50;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #45a049; /* Darker Green */
+  border-color: #45a049;
+  color: white;
+}
+
+
+/* Home Page */
+.mhub {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  color: #da686d;
+}
+
+/* Hero Section */
+.hero {
+  margin-top: 44px;
+  position: relative;
+  color: #1e3a8a;
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+  background-image: url(https://www.flyheli.co.uk/wp-content/uploads/2018/01/2018-01-27-wedding-best.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  padding: 5px 30px;
+}
+
+.hero-box {
+  border-radius: 1rem;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  border: 1px solid black;
+  max-width: 400px;
+  margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+.animations {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+/* Text alignment to the right */
+.hero .text-end {
+  text-align: right;
+}
+
+.hero .text-end h1,
+.hero .text-end p,
+.hero .text-end .btn {
+  color: #ffffff; /* Change text color for better visibility */
+}
+
+.hero .text-end .btn {
+  margin-top: 20px; /* Adjust margin if needed */
+}
+
+/* About Section */
+
+
+
+
+
+.about {
+  padding-top: 100px;
+  background-color: #8bd2d1;
+}
+
+.about h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.about-img img {
+  width: 60%;
+  height: 60vh;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
+.accordian-bg {
+  background-color: #ffffff91;
+  color: #e63946;
+}
+
+
+
+
+h1 {
+  font-family:  sans-serif;
+  font-weight: bold;
+  color: #001757;
+}
+
+.about-img img {
+  width: 60%;
+  height: 60vh;
+  border-radius: 1rem;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.accordian-bg {
+  background-color: #ffffff91;
+  color: #97b3ff;
+}
+/* Custom CSS to align text center */
+.about .col-12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* Services Section */
+
+.services {
+  padding: 5rem 0;
+  background-color: #8bd2d1; /* Light background for the section */
+}
+
+.services h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 1.5rem;
+}
+
+.services hr {
+  border: 0;
+  border-top: 2px solid #e63946;
+  width: 25%;
+  margin: 1.5rem auto;
+}
+
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  background-color: #ffe5e5; /* Light red background for the service boxes */
+  border-radius: 1rem;
+  padding: 1.5rem; /* Reduced padding */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  margin-bottom: 2rem; /* Added margin to create space between cards */
+}
+
+.card-body i {
+  font-size: 2.0rem; /* Reduced icon size */
+  background-color: #e63946;
+  padding: 0.8rem; /* Reduced padding */
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.card-body h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 1rem;
+}
+
+.card-body p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1 rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.card-body .btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  background-color: #e63946;
+  color: #ffffff;
+}
+
+.card-body .btn:hover {
+  background-color: #d62828;
+  color: #ffffff;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.fa {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .services h1 {
+    font-size: 2rem;
+  }
+
+  .services p {
+    font-size: 1rem;
+  }
+
+  .card-body {
+    padding: 1rem; /* Further reduced padding for smaller screens */
+  }
+
+  .card-body i {
+    font-size: 2rem; /* Reduced icon size for smaller screens */
+  }
+}
+
+
+
+/* Contact Section */
+.contact {
+  background-color: #8bd2d1;
+  padding: 5rem 0;
+}
+
+.contact h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 1.5rem;
+}
+
+.contact hr {
+  border: 0;
+  border-top: 2px solid #e63946;
+  width: 25%;
+  margin: 1.5rem auto;
+}
+
+.contact-form {
+  background-color: #f5e99c;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #e63946;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 0.5rem;
+  border: 1px solid #e63946;
+}
+
+.contact-form button {
+  background-color: #e63946;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.contact-form button:hover {
+  background-color: #d62828;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info a {
+  color: #e63946;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #d62828;
+}
+

@@ -1,0 +1,96 @@
+
+/* Hero Section */
+.hero {
+  margin-top: 44px;
+  position: relative;
+  color: #1e3a8a;
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+  background-image: url(https://www.flyheli.co.uk/wp-content/uploads/2018/01/2018-01-27-wedding-best.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Poppins', sans-serif;
+}
+.handwriting {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4em;
+  color: #fffdfd;
+  animation: fadeIn 3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero .btn {
+  padding: 5px 30px;
+}
+
+.hero-box {
+  border-radius: 1rem;
+  background: linear-gradient(45deg, #ff7e5f, #feb47b);
+  border: 1px solid black;
+  max-width: 400px;
+  margin-left: 70px;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
+
+.animations {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: moveup 0.5s linear forwards;
+}
+
+@keyframes moveup {
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+/* Text alignment to the right */
+.hero .text-end {
+  text-align: right;
+}
+
+.hero .text-end h1,
+.hero .text-end p,
+.hero .text-end .btn {
+  color: #ffffff; /* Change text color for better visibility */
+}
+
+.hero .text-end .btn {
+  margin-top: 20px; /* Adjust margin if needed */
+}

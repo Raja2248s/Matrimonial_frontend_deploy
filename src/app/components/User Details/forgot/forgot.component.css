@@ -1,0 +1,106 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+ 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ensure full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffffab;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Center content */
+  margin-top: 100px;
+}
+
+h2, .fa, p {
+  color: #d62828; /* Reddish color */
+}
+
+.text-center {
+  width: 100%;
+}
+
+.btn {
+  font-weight: bold;
+  background: linear-gradient(45deg, #e63946, #d62828); /* Reddish gradient */
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #d62828, #e63946); /* Darker reddish gradient */
+}
+
+.form-level {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: #d62828; /* Reddish focus color */
+  box-shadow: 0 0 0 0.2rem rgba(214, 40, 40, 0.25);
+}
+
+.text-danger {
+  color: #dc3545;
+  font-size: 0.875rem;
+}
+
+.form-group.text {
+  text-align: center;
+}
+
+.form-group.text input[type="submit"] {
+  width: auto;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e63946; /* Reddish button */
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.form-group.text input[type="submit"]:hover {
+  background-color: #d62828; /* Darker reddish on hover */
+}
+
+.form-group.text p {
+  margin-top: 10px;
+  font-size: 0.875rem;
+}
+
+.form-group.text a {
+  color: #e63946; /* Reddish link */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.form-group.text a:hover {
+  color: #d62828; /* Darker reddish on hover */
+}

@@ -1,0 +1,51 @@
+
+.about {
+  padding-top: 100px;
+  background-color: #f4e09d;
+}
+
+.about h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.about-img img {
+  width: 60%;
+  height: 60vh;
+  border-radius: 1rem;
+  border: 1px solid black;
+}
+
+.accordian-bg {
+  background-color: #ffffff91;
+  color: #e63946;
+}
+
+
+
+
+h1 {
+  font-family:  sans-serif;
+  font-weight: bold;
+  color: #001757;
+}
+
+.about-img img {
+  width: 60%;
+  height: 60vh;
+  border-radius: 1rem;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.accordian-bg {
+  background-color: #ffffff91;
+  color: #97b3ff;
+}
+/* Custom CSS to align text center */
+.about .col-12 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

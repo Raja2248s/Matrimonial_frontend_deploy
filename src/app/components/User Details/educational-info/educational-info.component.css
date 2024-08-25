@@ -1,0 +1,71 @@
+body {
+  font-family: 'sans-serif';
+  background-color: #ffb2b2; /* Light gray background */
+}
+/* .container{
+  margin-top: 100px;
+} */
+.container {
+  color: rgb(30, 10, 76);
+  max-width: 800px;
+  margin: 120px auto;
+  background-color: #ffffffab;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+h2 {
+  font-weight: bold;
+  color: #333; /* Dark gray for headings */
+}
+
+.login-container {
+  max-width: 440px;
+  margin: 100px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h2 {
+  color: #333;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8; /* Lighter gray for input fields */
+}
+
+.form-group input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #931d00; /* Light orange background */
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #f3bdb2; /* Darker orange on hover */
+}
+
+.form-level {
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,136 @@
+
+/* Services Section */
+
+.services {
+  padding: 5rem 0;
+  background-color:  #85d8f4; /* Light background for the section */
+}
+
+.services h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 1.5rem;
+}
+
+.services hr {
+  border: 0;
+  border-top: 2px solid #e63946;
+  width: 25%;
+  margin: 1.5rem auto;
+}
+
+.card-hover {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+  background-color: #ffe5e5; /* Light red background for the service boxes */
+  border-radius: 1rem;
+  padding: 1.5rem; /* Reduced padding */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added subtle shadow */
+  margin-bottom: 2rem; /* Added margin to create space between cards */
+}
+
+.card-body i {
+  font-size: 2.0rem; /* Reduced icon size */
+  background-color: #e63946;
+  padding: 0.8rem; /* Reduced padding */
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.card-body h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 1rem;
+}
+
+.card-body p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1 rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.card-body .btn {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  background-color: #e63946;
+  color: #ffffff;
+}
+
+.card-body .btn:hover {
+  background-color: #d62828;
+  color: #ffffff;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-light {
+  color: #ffffff;
+}
+
+.bg-light {
+  background-color: #f8f9fa !important;
+}
+
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
+.mb-5 {
+  margin-bottom: 3rem !important;
+}
+
+.my-3 {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+.p-2 {
+  padding: 0.5rem !important;
+}
+
+.py-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.fa {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .services h1 {
+    font-size: 2rem;
+  }
+
+  .services p {
+    font-size: 1rem;
+  }
+
+  .card-body {
+    padding: 1rem; /* Further reduced padding for smaller screens */
+  }
+
+  .card-body i {
+    font-size: 2rem; /* Reduced icon size for smaller screens */
+  }
+}

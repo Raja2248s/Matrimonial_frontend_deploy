@@ -1,0 +1,82 @@
+/* General styling for the row and cards */
+.row {
+  margin-bottom: 5rem;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  background-color: #f7f7f7; /* Light background for elegance */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the card body */
+.card-body {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Icon styling */
+.card-body i {
+  font-size: 3rem;
+  background-color: #d62828;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+/* Card title styling */
+.card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #d62828;
+  margin-bottom: 1rem;
+}
+
+/* Card text styling */
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .card-body {
+    padding: 1rem;
+  }
+
+  .card-body i {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.2rem;
+  }
+
+  .card-text {
+    font-size: 1.5rem;
+  }
+}

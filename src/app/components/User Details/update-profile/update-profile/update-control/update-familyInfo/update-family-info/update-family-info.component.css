@@ -1,0 +1,109 @@
+
+/* General container styling */
+.container {
+  max-width: 500px;
+  margin: 120px auto;
+  padding: 30px;
+  background-color: #ffffffab;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+/* Heading styling */
+h5, h4 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #f0e9ea;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left; /* Aligns the labels and inputs to the left */
+}
+
+/* Label styling */
+.form-group label {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #1c1718;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+/* Input field styling */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Radio button styling */
+.form-group .radio-inline {
+  margin-right: 20px;
+}
+
+.space {
+  margin-left: 15px;
+}
+
+/* Form heading styling */
+.heading {
+  font-family: 'Poppins', sans-serif;
+  color: #010101;
+  font-weight: bold;
+}
+
+/* Button styling */
+.btn {
+  font-family: 'Poppins', sans-serif;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  background: linear-gradient(45deg, #dad3d3, #ddd6d6);
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg,#dad3d3, #ddd6d6);
+}
+
+/* Error message styling */
+.text-danger {
+  font-family: 'Poppins', sans-serif;
+  color: #e9e0e0;
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    margin: 50px auto; /* Reduces top margin for smaller screens */
+    padding: 20px;
+  }
+
+  h5, h4 {
+    font-size: 1.25rem; /* Reduces font size for headings */
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="email"],
+  .form-group input[type="number"],
+  .form-group select {
+    padding: 8px; /* Reduces padding for input fields */
+  }
+
+  .btn {
+    padding: 8px; /* Reduces padding for button */
+  }
+}

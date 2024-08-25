@@ -1,0 +1,79 @@
+/* Contact Section */
+.contact {
+  
+  padding: 5rem 0;
+}
+
+.contact h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 1.5rem;
+}
+
+.contact hr {
+  border: 0;
+  border-top: 2px solid #e63946;
+  width: 25%;
+  margin: 1.5rem auto;
+}
+
+.contact-form {
+
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  font-weight: bold;
+  color: #e63946;
+}
+
+.contact-form input,
+.contact-form textarea {
+  border-radius: 0.5rem;
+  border: 1px solid #e63946;
+}
+
+.contact-form button {
+  background-color: #e63946;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: none;
+}
+
+.contact-form button:hover {
+  background-color: #d62828;
+}
+
+.contact-info {
+  text-align: center;
+}
+
+.contact-info h5 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #e63946;
+  margin-bottom: 1rem;
+}
+
+.contact-info p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info a {
+  color: #e63946;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-info a:hover {
+  color: #d62828;
+}
+

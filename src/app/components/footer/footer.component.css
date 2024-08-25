@@ -1,0 +1,9 @@
+/* .footer{
+  background-color: rgba(238, 193, 90, 0.603);
+  color: rgb(0, 61, 98);
+} */
+.footer {
+  background-color: rgba(158, 212, 228, 0.603);
+  color: rgb(5, 7, 8);
+  padding: 1rem;
+}

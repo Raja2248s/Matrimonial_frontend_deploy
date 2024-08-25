@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+.global{
+  /* background-image: url(./assets/bg3.png); */
+  background: linear-gradient(45deg, #e48362d2, #f98d6fcd);
+background-image: url(https://th.bing.com/th/id/R.2d574e781254f1d564af597a39db599f?rik=mmix2H%2bdIhD6tA&riu=http%3a%2f%2fdemo.awethemes.com%2ffleurdesel%2fwp-content%2fuploads%2f2017%2f03%2fwedding-bg.jpg&ehk=nmZLFIq8SOiEFUVeCawUgpgSFYnntGgWxe1vWuyuq9A%3d&risl=&pid=ImgRaw&r=0);
+background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+ .video-background {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0 ;
+  z-index: -1;
+ }
+
+@media(min-aspect-ratio: 16/9){
+  .video-background{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media(max-aspect-ratio: 16/9){
+  .video-background{
+    width: auto;
+    height: 100%;
+  }
+} 

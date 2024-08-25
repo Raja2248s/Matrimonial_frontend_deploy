@@ -1,0 +1,60 @@
+.user h3 {
+/* General Styling */
+.font-weight-bold {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+/* User Component */
+.user {
+  border: 1px solid #333; /* Darker border */
+  border-radius: 1rem;
+  padding: 15px; /* Increased padding */
+  margin-bottom: 50px; /* Decreased margin-bottom */
+  background-color: rgba(255, 255, 255, 0.85); /* Slightly less opaque background */
+  margin-top: 50px; /* Decreased margin-top */
+  margin-left: 20px;
+  margin-right: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover Effect */
+.user:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Animation for User Element */
+@keyframes user-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.user {
+  animation: user-fade-in 0.6s ease-out; /* Apply fade-in animation */
+}
+
+/* Additional Styling for Buttons */
+.user .btn {
+  font-weight: bold;
+  background-color: #6a0572; /* Dark purple button */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px; /* Margin for spacing */
+}
+
+.user .btn:hover {
+  background-color: #a40606; /* Dark red on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+}

@@ -1,0 +1,80 @@
+/* General styling for containers */
+.container {
+  margin: 50px auto;
+  max-width: 800px;
+  padding: 30px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container1 {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for navigation bar */
+.navbar {
+  background-color: #4caf50; /* Green background color */
+  border-radius: 8px;
+  margin: 20px auto;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-item {
+  padding: 0 15px;
+}
+
+.nav-link {
+  color: #fff; /* White text color */
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ffd700; /* Yellow text color on hover or active */
+}
+
+/* Styling for form sections */
+.form-section {
+  padding: 30px;
+  margin: 20px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group label {
+  font-weight: bold;
+  color: #333; /* Dark gray label text color */
+}
+
+/* Responsive styling for nav-links */
+@media (min-width: 768px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background-color: #ffd700; /* Yellow underline */
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+  }
+
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: calc(100% - 30px);
+    visibility: visible;
+  }
+}
